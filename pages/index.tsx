@@ -1,10 +1,12 @@
-import { Inter } from "@next/font/google";
-import { IconName } from "react-icons/im";
-
-import Header from "../components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import Section1 from "../components/Section1";
+import Format from "../layout/format";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <div>
+      <Format>
+        <Section1 />
+      </Format>
+    </div>
+  );
 }
