@@ -1,3 +1,4 @@
+import CategoriesPosts from "../components/CategoriesPosts";
 import Hero from "../components/Hero";
 import LatestPost from "../components/LatestPost";
 import MostPopularPost from "../components/MostPopularPost";
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <LatestPost />
         <MostPopularPost />
+        <CategoriesPosts />
       </Format>
     </div>
   );
