@@ -7,7 +7,7 @@ import Related from "../../components/Related";
 
 type Props = {};
 
-export default function focus({}: Props) {
+export default function post({}: Props) {
   return (
     <Format>
       <section className="container mx-auto md:px-2 py-16 w-1/2">
