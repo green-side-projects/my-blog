@@ -1,11 +1,15 @@
-import Section1 from "../components/Section1";
+import Hero from "../components/Hero";
+import LatestPost from "../components/LatestPost";
+import MostPopularPost from "../components/MostPopularPost";
 import Format from "../layout/format";
 
 export default function Home() {
   return (
     <div>
       <Format>
-        <Section1 />
+        <Hero />
+        <LatestPost />
+        <MostPopularPost />
       </Format>
     </div>
   );

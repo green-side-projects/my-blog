@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 
-export default function Section1() {
+export default function Hero() {
   SwiperCore.use([Autoplay]);
   const bg = {
     background: "url('/images/banner.png') no-repeat",
@@ -22,7 +22,7 @@ export default function Section1() {
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{
-          delay: 2000,
+          delay: 5000,
         }}
         loop={true}
         onSlideChange={() => console.log("slide change")}
@@ -67,7 +67,7 @@ function Slide() {
           <div className="cat">
             <Link
               href="/"
-              className="text-orange-300 hover:text-orange-500 px-2"
+              className="text-[#b7c307] hover:text-orange-500 px-2"
             >
               Technology, Nature
             </Link>
