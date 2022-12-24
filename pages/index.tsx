@@ -2,6 +2,7 @@ import CategoriesPosts from "../components/CategoriesPosts";
 import Hero from "../components/Hero";
 import LatestPost from "../components/LatestPost";
 import MostPopularPost from "../components/MostPopularPost";
+import NewsLetter from "../components/_child/NewsLetter";
 import Format from "../layout/format";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <LatestPost />
         <MostPopularPost />
         <CategoriesPosts />
+        <NewsLetter />
       </Format>
     </div>
   );
