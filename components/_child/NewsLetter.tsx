@@ -2,11 +2,6 @@ import React from "react";
 
 type Props = {};
 
-const bg = {
-  background: "url('/images/banner.png') no-repeat",
-  backgroundPosition: "right",
-};
-
 export default function NewsLetter({}: Props) {
   return (
     <section className="bg-gray-50 mt-20">

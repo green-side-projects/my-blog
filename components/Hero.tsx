@@ -13,7 +13,7 @@ export default function Hero() {
     backgroundPosition: "right",
   };
   return (
-    //style={}>
+    //style={bg}>
     <section className="py-20 border-2">
       <div className="container mx-auto md:px-20">
         <h1 className="font-bold text-4xl text-center">Trending</h1>
