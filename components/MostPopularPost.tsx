@@ -10,51 +10,44 @@ type Props = {};
 export default function MostPopularPost({}: Props) {
   return (
     <section className="border-2 container mx-auto md:px-20 py-10">
-      <h1 className="font-bold text-3xl py-12 text-center">
-        Most Popular Posts
-      </h1>
-      {/*if it is below the medium devices only add 1 column else on md 2 cols else on lg 3*/}
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-14">
-        <section className="py-20 border-2">
-          <div className="container mx-auto md:px-20">
-            <h1 className="font-bold text-4xl text-center">Trending</h1>
-          </div>
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={2}
-            autoplay={{
-              delay: 5000,
-            }}
-            loop={true}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide>
-              <Article />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Article />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Article />
-            </SwiperSlide>
-            ...
-          </Swiper>
-        </section>
-      </div>
+      <h1 className="font-bold text-3xl py-12 text-center">Most Popular</h1>
+      {/*Most Popular*/}
+
+      {/*swiper*/}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={2}
+        autoplay={{
+          delay: 5000,
+        }}
+        loop={true}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <Article />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Article />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Article />
+        </SwiperSlide>
+        ...
+      </Swiper>
     </section>
   );
 }
 
 function Article() {
   return (
-    <div className="item">
+    <div className="grid">
       <div className="images">
         <Link href="/">
           <Image
             src={"/images/featuredImage.jpg"}
-            width={"500"}
-            height={"300"}
+            width={"600"}
+            height={"400"}
             alt="FeaturedArticleImage"
           />
         </Link>
@@ -69,7 +62,7 @@ function Article() {
           <div className="title">
             <Link
               href={"/"}
-              className="text-4xl md:text-2xl font-bold text-gray-800 hover:text-gray-600"
+              className="text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600"
             >
               Headless CMS: Provide data in your application
             </Link>
