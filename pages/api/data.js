@@ -1,120 +1,106 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-
-type Data = {};
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({
-    Trending: [
-      {
-        id: 1,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/img1.jpg",
-        description: `
+/* eslint-disable import/no-anonymous-default-export */
+export default {
+  Trending: [
+    {
+      id: 1,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/img1.jpg",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
             `,
-        published: "Jun 3,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 3,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 2,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/img2.jpg",
-        description: `
+    },
+    {
+      id: 2,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/img2.jpg",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
             `,
-        published: "Jun 5,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 5,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 3,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/img3.png",
-        description: `
+    },
+    {
+      id: 3,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/img3.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
             `,
-        published: "Jun 7,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 7,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 4,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/img4.png",
-        description: `
+    },
+    {
+      id: 4,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/img4.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
             `,
-        published: "Jun 10,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 10,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 5,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/img5.png",
-        description: `
+    },
+    {
+      id: 5,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/img5.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
             `,
-        published: "Jun 14,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 14,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-    ],
-    Posts: [
-      {
-        id: 1,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/posts/img1.jpg",
-        description: `
+    },
+  ],
+  Posts: [
+    {
+      id: 1,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/posts/img1.jpg",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
@@ -132,22 +118,21 @@ export default function handler(
             A small river named Duden flows by their place and supplies it with the necessary regelialia. 
             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
             `,
-        published: "Jun 3,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 3,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 2,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/posts/img2.png",
-        description: `
+    },
+    {
+      id: 2,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/posts/img2.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
@@ -165,22 +150,21 @@ export default function handler(
             A small river named Duden flows by their place and supplies it with the necessary regelialia. 
             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
             `,
-        published: "Jun 5,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 5,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 3,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/posts/img3.png",
-        description: `
+    },
+    {
+      id: 3,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/posts/img3.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
@@ -198,22 +182,21 @@ export default function handler(
             A small river named Duden flows by their place and supplies it with the necessary regelialia. 
             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
             `,
-        published: "Jun 7,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 7,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 4,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/posts/img4.png",
-        description: `
+    },
+    {
+      id: 4,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/posts/img4.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
@@ -231,22 +214,21 @@ export default function handler(
             A small river named Duden flows by their place and supplies it with the necessary regelialia. 
             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
             `,
-        published: "Jun 10,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 10,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 5,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/posts/img5.png",
-        description: `
+    },
+    {
+      id: 5,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/posts/img5.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
@@ -264,22 +246,21 @@ export default function handler(
             A small river named Duden flows by their place and supplies it with the necessary regelialia. 
             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
             `,
-        published: "Jun 14,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 14,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 6,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/posts/img2.png",
-        description: `
+    },
+    {
+      id: 6,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/posts/img2.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
@@ -297,110 +278,104 @@ export default function handler(
             A small river named Duden flows by their place and supplies it with the necessary regelialia. 
             It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
             `,
-        published: "Jun 5,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 5,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-    ],
-    Popular: [
-      {
-        id: 1,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/img1.jpg",
-        description: `
+    },
+  ],
+  Popular: [
+    {
+      id: 1,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/img1.jpg",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
             `,
-        published: "Jun 3,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 3,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 2,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/img2.jpg",
-        description: `
+    },
+    {
+      id: 2,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/img2.jpg",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
             `,
-        published: "Jun 5,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 5,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 3,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/img3.jpg",
-        description: `
+    },
+    {
+      id: 3,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/img3.jpg",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
             `,
-        published: "Jun 7,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 7,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 4,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/img4.png",
-        description: `
+    },
+    {
+      id: 4,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/img4.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
             `,
-        published: "Jun 10,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 10,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-      {
-        id: 5,
-        title:
-          "Your most unhappy customers are your greatest source of learning",
-        subtitle:
-          "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-        category: "Business, Travel",
-        img: "/images/articles/img5.png",
-        description: `
+    },
+    {
+      id: 5,
+      title: "Your most unhappy customers are your greatest source of learning",
+      subtitle:
+        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      category: "Business, Travel",
+      img: "/images/articles/img5.png",
+      description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
             `,
-        published: "Jun 14,  2022",
-        author: {
-          name: "Flying High",
-          img: "/images/author/author1.jpg",
-          designation: "CEO and Founder",
-        },
+      published: "Jun 14,  2022",
+      author: {
+        name: "Flying High",
+        img: "/images/author/author1.jpg",
+        designation: "CEO and Founder",
       },
-    ],
-  });
-}
+    },
+  ],
+};

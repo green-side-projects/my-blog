@@ -2,9 +2,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Author from "../components/_child/Author";
+import getPost from "../lib/helper";
+
 type Props = {};
 
 export default function LatestPost({}: Props) {
+  // console.log(getPost);
+  getPost(2).then((res) => console.log(res));
   return (
     <section className="border-2 container mx-auto md:px-20 py-10">
       <h1 className="font-bold text-3xl py-12 text-center">Latest Post</h1>
