@@ -25,8 +25,8 @@ export default function Hero() {
           delay: 5000,
         }}
         loop={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <Slide />
