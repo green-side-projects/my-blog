@@ -21,9 +21,11 @@ export default function LatestPost({}: Props) {
       <h1 className="font-bold text-3xl py-12 text-center">Latest Post</h1>
       {/*if it is below the medium devices only add 1 column else on md 2 cols else on lg 3*/}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14">
-        {/* {data.map((value, index) => (
-          <Article data={value} key={index}></Article>
-        ))} */}
+        {/* check if array existed before loading so it will not throw an error}*/}
+        {data &&
+          data.map((value: any, index: any) => (
+            <Article data={value} key={index}></Article>
+          ))}
         {/* <Article />
         <Article />
         <Article />

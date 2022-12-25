@@ -3,7 +3,7 @@ export default {
   Trending: [
     {
       id: 1,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
@@ -21,7 +21,7 @@ export default {
     },
     {
       id: 2,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
@@ -39,7 +39,7 @@ export default {
     },
     {
       id: 3,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
@@ -57,7 +57,7 @@ export default {
     },
     {
       id: 4,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
@@ -75,7 +75,7 @@ export default {
     },
     {
       id: 5,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
@@ -95,11 +95,11 @@ export default {
   Posts: [
     {
       id: 1,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher is in NZ",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
-      img: "/images/articles/posts/img1.jpg",
+      img: "/images/articles/posts/img1.png",
       description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
             text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
@@ -127,7 +127,7 @@ export default {
     },
     {
       id: 2,
-      title: "Your most unhappy customers are your greatest source of learning",
+      title: "Asher in AU",
       subtitle:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       category: "Business, Travel",
