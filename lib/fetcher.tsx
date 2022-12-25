@@ -5,9 +5,8 @@ const baseUrl = process.env.BASEURL;
 
 export default function fetcher(endpoint: any) {
   const { data, error } = useSWR(`${baseUrl}${endpoint}`, response);
-  return {
-    data,
-    isLoading: !error && !data,
-    isError: error,
-  };
+  if (error) return { error };
+  if (!data) return { data: null };
+
+  return { data };
 }
