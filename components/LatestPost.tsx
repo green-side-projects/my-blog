@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Author from "../components/_child/Author";
-import fetcher from "../lib/fetcher";
+import Fetcher from "../lib/fetcher";
 // import getPost from "../lib/helper";
 
 type Props = {};
@@ -11,7 +11,7 @@ export default function LatestPost({}: Props) {
   // console.log(getPost);
   // getPost(2).then((res) => console.log(res));
   // console.log(process.env.BASEURL);
-  const { data, isLoading, isError } = fetcher("api/posts");
+  const { data, isLoading, isError } = Fetcher("api/posts");
   // Check if it return an object array
   if (data) {
     console.log(data);
