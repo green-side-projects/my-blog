@@ -9,13 +9,16 @@ import Fetcher from "../lib/fetcher";
 import Spinner from "./_child/Spinner";
 import ErrorSpinner from "./_child/ErrorSpinner";
 
-export default function Hero() {
+// type Props = {};
+
+export default function Hero({}: Props) {
   SwiperCore.use([Autoplay]);
+
   const bg = {
     background: "url('/images/banner.png') no-repeat",
     backgroundPosition: "right",
   };
-  const { data, isLoading, isError } = Fetcher("api/posts");
+  const { data, isLoading, isError } = Fetcher("api/trending");
   // Check if it return an object array
   if (data) {
     console.log(data);
@@ -41,6 +44,7 @@ export default function Hero() {
       <div className="container mx-auto md:px-20">
         <h1 className="font-bold text-4xl text-center">Trending</h1>
       </div>
+
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -51,25 +55,37 @@ export default function Hero() {
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        ...
+        {data.map((value: any, index: any) => (
+          <SwiperSlide key={index}>
+            <Slide data={value} Trending={[]}></Slide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
 }
 
-function Slide() {
+interface Props {
+  data: any;
+  Trending: {
+    id: number;
+    title: string;
+    subtitle: string;
+    category: string;
+    img: string;
+    description: string;
+    published: string;
+    author: {
+      name: string;
+      img: string;
+      designation: string;
+    };
+  }[];
+}
+
+function Slide({ data }: Props) {
+  const { id, title, category, img, published, subtitle, author, description } =
+    data;
   return (
     <>
       <div className="grid md:grid-cols-2 border-2 py-2">
@@ -77,7 +93,7 @@ function Slide() {
         <div className="image py-1 px-20 md:ml-20">
           <Link href="/">
             <Image
-              src={"/images/featuredImage.jpg"}
+              src={img || "/"}
               width={"600"}
               height={"600"}
               alt="FeaturedArticleImage"
@@ -92,26 +108,21 @@ function Slide() {
               href="/"
               className="text-[#b7c307] hover:text-orange-500 px-2"
             >
-              Technology, Nature
+              {category || "Unknown"}
             </Link>
             <Link href="/" className="text-gray-500 hover:text-orange-500">
-              December 23, 2022
+              {published || "Unknown"}
             </Link>
             <div className="title">
               <Link
                 href={"/"}
                 className="text-4xl md:text-6xl font-bold text-gray-800 hover:text-gray-600"
               >
-                Headless CMS: Provide data in your application
+                {title || "Unknown"}
               </Link>
             </div>
-            <p className="text-gray-500 py-3">
-              Gives your developer a nice DevEx by easily creating mock data
-              without fuss. Learn the industry standard tool for creating
-              contents whether it be Strapi, Sanity or Directus. We will show
-              you why it is that you need one now.
-            </p>
-            <Author />
+            <p className="text-gray-500 py-3">{description || "Unknown"}</p>
+            {author ? <Author /> : <></>}
           </div>
         </div>
       </div>
