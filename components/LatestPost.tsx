@@ -59,7 +59,7 @@ function Article({ data }: any) {
   return (
     <div className="item">
       <div className="images">
-        <Link href="/">
+        <Link href={`posts/${id}`}>
           <Image
             src={img || "/"}
             width={"500"}
@@ -69,15 +69,21 @@ function Article({ data }: any) {
         </Link>
 
         <div className="cat">
-          <Link href="/" className="text-[#b7c307] hover:text-orange-500 pr-3">
+          <Link
+            href={`posts/${id}`}
+            className="text-[#b7c307] hover:text-orange-500 pr-3"
+          >
             {category || "Unknown"}
           </Link>
-          <Link href="/" className="text-gray-500 hover:text-orange-500">
+          <Link
+            href={`posts/${id}`}
+            className="text-gray-500 hover:text-orange-500"
+          >
             {published || "Unknown"}
           </Link>
           <div className="title">
             <Link
-              href={"/"}
+              href={`posts/${id}`}
               className="text-4xl md:text-2xl font-bold text-gray-800 hover:text-gray-600"
             >
               {title}

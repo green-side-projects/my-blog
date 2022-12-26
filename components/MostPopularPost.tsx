@@ -35,17 +35,16 @@ export default function MostPopularPost({}: Props) {
 
   return (
     <section className="border-2 container mx-auto md:px-20 py-10">
-      <h1 className="font-bold text-3xl py-12 text-center">Most Popular</h1>
+      <h1 className="font-bold text-3xl py-12 text-center">Most Popular!</h1>
       {/*Most Popular*/}
 
       {/*swiper*/}
       <Swiper
-        spaceBetween={50}
-        slidesPerView={2}
-        autoplay={{
-          delay: 5000,
-        }}
-        loop={true}
+        // autoplay={{
+        //   delay: 5000,
+        // }}
+        // loop={true}
+        breakpoints={{ 640: { slidesPerView: 2, spaceBetween: 30 } }}
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
@@ -69,7 +68,7 @@ function Article({ data }: any) {
   return (
     <div className="grid">
       <div className="images">
-        <Link href="/">
+        <Link href={`posts/${id}`}>
           <Image
             src={img}
             width={"600"}
@@ -79,15 +78,21 @@ function Article({ data }: any) {
         </Link>
 
         <div className="cat">
-          <Link href="/" className="text-[#b7c307] hover:text-orange-500 pr-3">
+          <Link
+            href={`posts/${id}`}
+            className="text-[#b7c307] hover:text-orange-500 pr-3"
+          >
             {category}
           </Link>
-          <Link href="/" className="text-gray-500 hover:text-orange-500">
+          <Link
+            href={`posts/${id}`}
+            className="text-gray-500 hover:text-orange-500"
+          >
             {published}
           </Link>
           <div className="title">
             <Link
-              href={"/"}
+              href={`posts/${id}`}
               className="text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600"
             >
               {title}

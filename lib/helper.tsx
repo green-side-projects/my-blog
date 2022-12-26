@@ -2,7 +2,7 @@
 //endpoint: http://localhost:3000/api/posts
 
 const baseUrl = "http://localhost:3000/api/posts";
-export default async function getPost(id: number) {
+export default async function getPost(id?: number) {
   const res = await fetch(`${baseUrl}`);
   const posts = await res.json();
 
