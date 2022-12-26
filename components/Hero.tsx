@@ -9,7 +9,7 @@ import Fetcher from "../lib/fetcher";
 import Spinner from "./_child/Spinner";
 import ErrorSpinner from "./_child/ErrorSpinner";
 
-// type Props = {};
+type Props = {};
 
 export default function Hero({}: Props) {
   SwiperCore.use([Autoplay]);
@@ -57,7 +57,7 @@ export default function Hero({}: Props) {
       >
         {data.map((value: any, index: any) => (
           <SwiperSlide key={index}>
-            <Slide data={value} Trending={[]}></Slide>
+            <Slide data={value}></Slide>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -65,25 +65,7 @@ export default function Hero({}: Props) {
   );
 }
 
-interface Props {
-  data: any;
-  Trending: {
-    id: number;
-    title: string;
-    subtitle: string;
-    category: string;
-    img: string;
-    description: string;
-    published: string;
-    author: {
-      name: string;
-      img: string;
-      designation: string;
-    };
-  }[];
-}
-
-function Slide({ data }: Props) {
+function Slide({ data }: any) {
   const { id, title, category, img, published, subtitle, author, description } =
     data;
   return (
