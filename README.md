@@ -1,5 +1,5 @@
-# My blog
+# API
 
-Uses tailwind, nextjs and some cms soon to populate the content.
+Mimicking the backend by inputting a raw json.
 
-I realized that I need to use tailwind since by popular vote it is the most voted and use tech,
+> > This api json file can be put into mongodb or in sql

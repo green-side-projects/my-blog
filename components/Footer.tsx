@@ -8,9 +8,14 @@ import {
 import Link from "next/link";
 type Props = {};
 
+const bg = {
+  background: "url('/images/leaf.png') no-repeat",
+  backgroundPosition: "top ",
+};
+
 export default function Footer({}: Props) {
   return (
-    <footer className="bg-gray-50">
+    <footer className="bg-gray-50" style={bg}>
       <div className="container mx-auto justify-center py-10">
         <div className="py-20">
           {/*Icons*/}
@@ -31,7 +36,9 @@ export default function Footer({}: Props) {
         <p className="text-center text-gray-400">
           {"© 2023 - Present Asher Manangan. All Rights Reserved. "}
         </p>
-        <p className="text-center text-gray-400">{"Terms and Conditions"}</p>
+        <p className="text-center text-gray-400 py-2">
+          {"Terms and Conditions"}
+        </p>
       </div>
     </footer>
   );
