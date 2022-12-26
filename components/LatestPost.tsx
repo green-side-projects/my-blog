@@ -37,7 +37,7 @@ export default function LatestPost({}: Props) {
   );
 }
 
-function Article({ data }) {
+function Article({ data }: any) {
   const { id, title, category, img, published, subtitle, author } = data;
   return (
     <div className="item">
