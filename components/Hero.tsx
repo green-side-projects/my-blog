@@ -5,6 +5,9 @@ import Author from "./_child/Author";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
+import Fetcher from "../lib/fetcher";
+import Spinner from "./_child/Spinner";
+import ErrorSpinner from "./_child/ErrorSpinner";
 
 export default function Hero() {
   SwiperCore.use([Autoplay]);
@@ -12,6 +15,26 @@ export default function Hero() {
     background: "url('/images/banner.png') no-repeat",
     backgroundPosition: "right",
   };
+  const { data, isLoading, isError } = Fetcher("api/posts");
+  // Check if it return an object array
+  if (data) {
+    console.log(data);
+  }
+
+  // if(true)
+  if (isLoading)
+    return (
+      <div>
+        <Spinner />
+      </div>
+    );
+  // if (true)
+  if (isError)
+    return (
+      <div>
+        <ErrorSpinner />
+      </div>
+    );
   return (
     //style={bg}>
     <section className="py-20 border-2">

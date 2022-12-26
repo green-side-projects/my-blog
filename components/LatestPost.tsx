@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Author from "../components/_child/Author";
 import Fetcher from "../lib/fetcher";
+import Spinner from "./_child/Spinner";
+import ErrorSpinner from "./_child/ErrorSpinner";
 // import getPost from "../lib/helper";
 
 type Props = {};
@@ -16,6 +18,21 @@ export default function LatestPost({}: Props) {
   if (data) {
     console.log(data);
   }
+
+  // if(true)
+  if (isLoading)
+    return (
+      <div>
+        <Spinner />
+      </div>
+    );
+  // if (true)
+  if (isError)
+    return (
+      <div>
+        <ErrorSpinner />
+      </div>
+    );
   return (
     <section className="border-2 container mx-auto md:px-20 py-10">
       <h1 className="font-bold text-3xl py-12 text-center">Latest Post</h1>
