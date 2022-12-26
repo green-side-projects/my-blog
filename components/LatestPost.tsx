@@ -10,7 +10,7 @@ type Props = {};
 export default function LatestPost({}: Props) {
   // console.log(getPost);
   // getPost(2).then((res) => console.log(res));
-  // console.log(process.env.BASEURL);
+  console.log(process.env.BASEURL);
   const { data, isLoading, isError } = Fetcher("api/posts");
   // Check if it return an object array
   if (data) {
