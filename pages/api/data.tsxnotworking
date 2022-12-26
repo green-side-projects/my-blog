@@ -47,7 +47,8 @@ type Data = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<Data>,
+  data: Data
 ) {
   res.status(200).json({
     Trending: [
