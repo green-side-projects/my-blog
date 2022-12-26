@@ -1,6 +1,7 @@
 import useSWR from "swr";
 
-const response = (...args: any) => fetch(...args).then((res) => res.json());
+const response = (...args: [string, RequestInit?]) =>
+  fetch(...args).then((res) => res.json());
 const baseUrl = process.env.BASEURL;
 
 export default function Fetcher(endpoint: any) {
